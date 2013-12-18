@@ -1,8 +1,9 @@
-# Maintainer : Cian Mc Govern <cian@cianmcgovern.com>
+# Forked by : Andrew Fader <arch@andrewfader.com>
+# Forked from : Cian Mc Govern <cian@cianmcgovern.com>
 # Contributor : Ng Oon-Ee <ngoonee.talk@gmail.com>
 # Based on nvidia-beta by Dan Vratil <vratil@progdansoft.com>
 
-pkgname=nvidia-all
+pkgname=nvidia-all-325
 pkgver=325.15
 pkgrel=4
 pkgdesc="NVIDIA drivers for linux."
@@ -11,7 +12,7 @@ provides=("nvidia=${pkgver}")
 url="http://www.nvidia.com/"
 depends=("nvidia-utils=${pkgver}")
 makedepends=('linux-headers' 'kmod>=9-2')
-conflicts=('nvidia-96xx' 'nvidia-71xx' 'nvidia-legacy' 'nvidia' 'nvidia-beta' 'nvidia-beta-all')
+conflicts=('nvidia-96xx' 'nvidia-71xx' 'nvidia-legacy' 'nvidia' 'nvidia-beta' 'nvidia-beta-all' 'nvidia-all')
 license=('custom')
 install=nvidia.install
 source=('nvidia-linux-3.11.patch' 'nvidia-linux-3.12.patch')
